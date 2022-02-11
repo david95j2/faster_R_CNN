@@ -8,7 +8,7 @@ from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 print(os.path.abspath(__file__))
-image_path = "../../../../data/train/JPEGImages/WN4_142.jpg"
+image_path = "../../../../data/train/JPEGImages/WN04_142.jpg"
 
 image = Image.open(image_path).convert("RGB")
 
@@ -18,7 +18,7 @@ plt.show()
 plt.close()
 
 
-xml_path = "../../../../data/train/Annotations/WN4_142.xml"
+xml_path = "../../../../data/train/Annotations/WN04_142.xml"
 
 print("XML parsing Start\n")
 xml = open(xml_path, "r")
@@ -111,9 +111,18 @@ ann_root, ann_dir, ann_files = next(
 img_root, amg_dir, img_files = next(
     os.walk(os.path.join(dataset_path, IMAGE_FOLDER)))
 
-for xml_file in ann_files:
+ann_files.sort()
+img_files.sort()
+temp = 0
 
-    # XML파일와 이미지파일은 이름이 같으므로, 확장자만 맞춰서 찾습니다.
+for xml_file in ann_files:
+    # if temp == 3: break
+    # # XML파일와 이미지파일은 이름이 같으므로, 확장자만 맞춰서 찾습니다.
+    try:
+        if img_files[img_files.index(".".join([xml_file.split(".")[0], "jpg"]))] == None:
+            print("stop")
+    except ValueError as e:
+        print(e)
     img_name = img_files[img_files.index(
         ".".join([xml_file.split(".")[0], "jpg"]))]
     img_file = os.path.join(img_root, img_name)
@@ -141,10 +150,13 @@ for xml_file in ann_files:
         ymax = int(bndbox.find("ymax").text)
 
         # Box를 그릴 때, 왼쪽 상단 점과, 오른쪽 하단 점의 좌표를 입력으로 주면 됩니다.
-        draw.rectangle(((xmin, ymin), (xmax, ymax)), outline="red")
+        draw.rectangle(((xmin, ymin), (xmax, ymax)), outline="red", width=5)
         draw.text((xmin, ymin), name)
-
-    plt.figure(figsize=(25, 20))
-    plt.imshow(image)
-    plt.show()
-    plt.close()
+    # image = image.resize((224, 224), Image.LANCZOS)
+    image.save('../../../../data/train/AfterImages/' + str(img_name), 'jpeg')
+    # plt.figure(figsize=(25, 20))
+    # plt.imshow(image)
+    # print(type(image))
+    # plt.show()
+    # plt.close()
+    # temp += 1
