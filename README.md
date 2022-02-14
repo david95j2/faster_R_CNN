@@ -4,5 +4,6 @@
 
 1. custom dataset
 2. backbone fine-tuning
+3. RPN 을 제대로 이해하고 구현해보자!!
 ---
 ---
