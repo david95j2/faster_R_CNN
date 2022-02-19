@@ -7,5 +7,6 @@
 3. RPN 을 제대로 이해하고 구현해보자!!
 4. loss는 어케.?
 - iou 랑 L1 loss L2 loss
+anchor 별 비율
 ---
 ---
