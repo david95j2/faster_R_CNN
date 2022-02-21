@@ -8,5 +8,6 @@
 4. loss는 어케.?
 - iou 랑 L1 loss L2 loss cython으로 구하기!!
 anchor 별 비율
+cython...으로 대체 어케 구함
 ---
 ---
