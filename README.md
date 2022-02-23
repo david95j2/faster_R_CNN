@@ -7,7 +7,7 @@
 3. RPN 을 제대로 이해하고 구현해보자!!
 4. loss는 어케.?
 - iou 랑 L1 loss L2 loss cython으로 구하기!!
-anchor 별 비율
+anchor 별 비율 앵커를 찍는 방법
 cython...으로 대체 어케 구함
 128개 sampling
 ---
