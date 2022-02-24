@@ -8,6 +8,7 @@
 4. loss는 어케.?
 - iou 랑 L1 loss L2 loss cython으로 구하기!!
 anchor 별 비율 앵커를 찍는 방법
+anchor 어느 위치에 찍히냐???!!!!!
 cython...으로 대체 어케 구함
 128개 sampling
 ---
