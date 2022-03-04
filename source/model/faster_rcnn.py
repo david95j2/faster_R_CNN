@@ -1,12 +1,5 @@
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
 import torchvision
 from torchvision.ops import RoIPool
-
-import numpy as np
-
-from utils import *
 
 # Backbone
 from backbone import get_bb_clf
