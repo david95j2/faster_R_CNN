@@ -1,5 +1,9 @@
 # Faster R-CNN Implementation
 
+GPU v-100
+Custom Dataset
+Pretrained Model
+
 ### [Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/pdf/1506.01497.pdf)
 
 1. custom dataset
