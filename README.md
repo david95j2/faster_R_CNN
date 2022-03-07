@@ -1,8 +1,8 @@
 # Faster R-CNN Implementation
 
 GPU v-100
-Custom Dataset
-Pretrained Model
+Custom Dataset - total 6287
+Pretrained Model - vgg16 (fine tuning)
 
 ### [Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/pdf/1506.01497.pdf)
 
