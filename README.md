@@ -14,7 +14,7 @@ Pretrained Model - vgg16 (fine tuning)
 anchor 별 비율 앵커를 찍는 방법
 anchor 어느 위치에 찍히냐???!!!!!
 블로그는 믿지말고 paper를 믿자
-cython...으로 대체 어케 구함
+cython은 사용하지 않았음
 128개 sampling
 ---
 ---
