@@ -3,6 +3,7 @@
 GPU v-100
 Custom Dataset - total 6287
 Pretrained Model - vgg16 (fine tuning)
+batch-size :1
 
 ### [Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/pdf/1506.01497.pdf)
 
