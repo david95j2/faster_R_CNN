@@ -6,6 +6,7 @@
 - batch-size : 1
 - epoch : 14 (iter : train + val / test)
 - mAP:0.5
+- optimizer : SGD
 
 ### [Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/pdf/1506.01497.pdf)
 
