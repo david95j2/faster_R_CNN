@@ -29,3 +29,4 @@ cython은 사용하지 않았음
 코드정리해서 여기다가 올리기
 
 pre-processing code
+fpn 합치면??
